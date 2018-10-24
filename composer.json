@@ -1,0 +1,40 @@
+{
+    "name": "keplerstein/phpmail",
+    "description": "Plugin represents the Phpmail plugin",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "phpmail"
+    ],
+    "support": {
+        "docs": "https://github.com/keplerstein/phpmail/blob/master/README.md",
+        "issues": "https://github.com/keplerstein/phpmail/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Keplerstein",
+            "homepage": "keplerstein.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "keplerstein\\phpmail\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Phpmail",
+        "handle": "phpmail",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/keplerstein/phpmail/master/CHANGELOG.md",
+        "class": "keplerstein\\phpmail\\Phpmail"
+    }
+}

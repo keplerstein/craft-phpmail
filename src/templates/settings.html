@@ -1,0 +1,10 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: "Sendmail Path"|t('phpmail'),
+    instructions: "The custom PHP sendmail path."|t('phpmail'),
+    id: 'sendmailPath',
+    name: 'sendmailPath',
+    value: adapter.sendmailPath,
+    errors: adapter.getErrors('sendmailPath')
+}) }}
